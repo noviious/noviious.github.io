@@ -1,0 +1,447 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#header {
+  background-color: #f1f1f1;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 999;
+}
+
+#logo-container {
+  background-color: hsl(0, 0%, 0%);
+  margin: 0;
+  padding: 5px 20px;
+  transition: all 0.2s;
+}
+
+#header-img {
+  height: 60px;
+}
+
+#logo-container:hover {
+  background-color: hsl(0, 0%, 20%);
+}
+
+#nav-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bar ul li {
+}
+
+#nav-bar ul a {
+  color: #000;
+  display: block;
+  font-size: 17px;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+#nav-bar ul a:hover {
+  color: #0070d1;
+}
+
+#nav-btn {
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 25px;
+  color: #fff;
+  display: block;
+  font-size: 17px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+#nav-btn:hover {
+  background-color: #0070d1;
+  color: #fff;
+}
+
+.section {
+  padding: 80px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#intro {
+  background-color: #000;
+  background-image: url("https://d3ihk4j6ie4n1g.cloudfront.net/images/assets/Play/Horizon/_heroXL/HZN_SOCIALART_header.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  height: 600px;
+  margin-top: 70px;
+}
+
+#intro-overlay {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+#intro-container {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 800px;
+  z-index: 3;
+}
+
+#intro-container h1 {
+  font-size: 56px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+#intro-container p {
+  font-size: 22px;
+  margin: 0 0 40px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+  line-height: 1.6em;
+}
+
+#intro a {
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #1c1c1c;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+#intro a:hover {
+  background-color: #0070d1;
+  color: #fff;
+}
+
+#overview {
+  background-color: #f1f1f1;
+}
+
+#overview p {
+  font-size: 18px;
+  line-height: 1.6em;
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+#trailer {
+  background-color: #c1c1c1;
+  position: relative;
+  text-align: center;
+  background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-06-disclaimer-02oct20?$2400px$");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+#trailer-overlay {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.video-container {
+  position: relative;
+  z-index: 4;
+}
+
+#video {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  z-index: 4;
+}
+
+#features {
+  background-color: #f1f1f1;
+}
+
+.features-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+#f-box1 {
+  background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-05-disclaimer-02oct20?$1600px--t$");
+}
+
+#f-box2 {
+  background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-02-disclaimer-02oct20?$1600px--t$");
+}
+
+#f-box3 {
+  background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-03-disclaimer-02oct20?$1600px--t$");
+}
+
+#f-box4 {
+  background-image: url("https://gmedia.playstation.com/is/image/SIEPDC/horizon-forbidden-west-screenshot-01-disclaimer-02oct20?$1600px--t$");
+}
+
+.f-box {
+  background-color: #c1c1c1;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: block;
+  margin: 5px;
+  overflow: hidden;
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
+  width: calc(50% - 50px);
+  max-width: 760px;
+  min-height: 270px;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+#fbox-overlay {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.f-box h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4em;
+  margin: 0 auto 30px auto;
+  position: relative;
+  max-width: 300px;
+  min-height: 80px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.f-box p {
+  font-size: 20px;
+  line-height: 1.6em;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+#form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#form label {
+  display: block;
+  font-size: 18px;
+  line-height: 1.6em;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+#email {
+  background-color: hsl(0, 0%, 90%);
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 25px;
+  display: inline-block;
+  font-size: 17px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: calc(100% - 40px);
+  max-width: 250px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+#email:focus {
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 60%);
+  outline: 0;
+}
+
+::placeholder {
+  color: hsl(0, 0%, 50%);
+  opacity: 1;
+}
+
+#submit {
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+#submit:hover {
+  background-color: #0070d1;
+  color: #fff;
+}
+
+#footer {
+  background-color: hsl(0, 0%, 20%);
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#footer img {
+  display: block;
+  flex-shrink: 0;
+  margin: 10px auto 30px auto;
+  padding: 0 20px;
+  width: 160px;
+}
+
+#footer ul {
+  display: block;
+  margin: 10px auto 30px auto;
+  padding: 0 20px;
+  max-width: 300px;
+  list-style: none;
+  text-align: left;
+}
+
+#footer ul li a {
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  margin: 5px 0;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+#footer ul li a:hover {
+  color: hsl(0, 0%, 70%);
+}
+
+#footer p {
+  display: block;
+  margin: 10px auto 0 auto;
+  padding: 0 20px;
+  max-width: 300px;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1320px) {
+  .video-container {
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    max-width: 1280px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+  }
+
+  #video {
+    box-shadow: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #header {
+    position: static;
+  }
+  #logo-container {
+    padding: 0 20px;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+  }
+  #header-img {
+    height: 70px;
+  }
+  #nav-container {
+    display: none;
+  }
+  #intro {
+    margin-top: 0;
+  }
+  #footer {
+    display: block;
+  }
+  #footer ul {
+    text-align: center;
+  }
+  #footer p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .f-box {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+}
