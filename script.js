@@ -1,11 +1,14 @@
-$(function () {
-  "use strict";
+(function ($) {
+  // variables
+  (elementWidth = $("ul").width()),
+    (containerWidth = $("nav").width()),
+    (difference = elementWidth - containerWidth),
+    (finalWidth = difference * 1.5),
+    (element = $("ul"));
 
-  $(".menu__item").on("mouseenter", function () {
-    let id = $(this).data("id");
-    $("#" + id + "-bg__img").addClass("active");
+  // active on click
+  $("li").on("click", function () {
+    $("li").removeClass("active");
+    $(this).addClass("active");
   });
-  $(".menu__item").on("mouseleave", function () {
-    $(".menu-img img").removeClass("active");
-  });
-});
+})(jQuery);
