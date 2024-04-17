@@ -3,21 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Noviious Codes</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
-  </head>
-  <body>
-    <nav class="navigationWrapper">
-      <div class="logoWrapper">
-        <span class="stylish">Noviious</span>
-        <span class="logo">Codes</span>
-      </div>
-      <ul class="navigation">
-        <li class="parent"><a class="link" href="https://noviious.github.io/horizonforbiddenwest/" target="_blank">Horizon Forbidden West</a></li>
-        <li class="parent"><a class="link" href="https://noviious.github.io/calculator/"target="_blank">Calculator</a></li>
-      </ul>
-    </nav>
 
+  <body>
+    <!-- div .wrapp -->
+    <div class="wrapp">
+      <ul class="menu">
+        <li class="menu__item" data-id="1">
+          <a
+            href="https://noviious.github.io/horizonforbiddenwest/"
+            target="_blank"
+            class="menu__link"
+            >Horizon Forbidden West</a
+          >
+        </li>
+        <li class="menu__item" data-id="2">
+          <a
+            href="https://noviious.github.io/calculator/"
+            target="_blank"
+            class="menu__link"
+            >Calculator</a
+          >
+        </li>
+        <!-- <li class="menu__item" data-id="3">
+          <a href="#" class="menu__link">Net</a>
+        </li>
+        <li class="menu__item" data-id="4">
+          <a href="#" class="menu__link">Demo</a>
+        </li> -->
+      </ul>
+    </div>
+    <!-- /div .wrapp END -->
+    <script src="https://code.jquery.com/jquery-3.6.2.slim.min.js"></script>
+    <script src="script.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-1VDDWMRSTH");
+    </script>
   </body>
 </html>
